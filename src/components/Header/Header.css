@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 80px 0 80px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 7px;
+  padding: 7px 10px 7px 20px;
+  min-width: 352px;
+  border-radius: 40px;
+  border-color: #000000;
+  line-height: 22px;
+  color: #222222;
+  box-shadow: 1px -1px 8px 3px rgba(34, 60, 80, 0.2);
+
+  font-weight: 900;
+}
+.header__buttons::after {
+  content: '';
+  cursor: pointer;
+  background-color: #ff385c;
+  border-color: #ff385c;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 100%;
+  background-image: url('../../icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% 100%;
+}
+
+.header__btn {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header__menu-text {
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.header__menu-icon {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.header__menu-hamburger {
+  position: relative;
+  min-width: 77px;
+  min-height: 42px;
+  border-radius: 40px;
+  border-color: #000000;
+  box-shadow: 1px -1px 8px 3px rgba(34, 60, 80, 0.2);
+}
+
+.header__menu-hamburger::after {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  content: 'A';
+  color: #ff385c;
+  text-align: center;
+  background-color: black;
+  border-color: black;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
